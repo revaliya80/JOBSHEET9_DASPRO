@@ -15,6 +15,11 @@ public class ArrayRataNilai24 {
 
         for (int i = 0; i < nilaiMhs.length; i++) {
             total += nilaiMhs[i];
+
+            if (nilaiMhs[i] > 70) {
+                System.out.println("Mahasiswa ke-" + i + "Lulus!");
+            }
+
         }
 
         rata2 = total / nilaiMhs.length;
