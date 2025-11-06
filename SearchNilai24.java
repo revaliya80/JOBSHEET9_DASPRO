@@ -17,17 +17,16 @@ public class SearchNilai24 {
         System.out.print("Masukkan nilai yang di cari : ");
         int key = sc.nextInt();
 
-        boolean ditemukan = false;
-
         for (int i = 0; i < arrNilai.length; i++) {
             if (key == arrNilai[i]) {
-                ditemukan = true;
+                jumlahNilai = i;
                 System.out.print("Nilai " + key + "ketemu, merupakan nilai mahasiswa ke-" + (i + 1));
+                break;
+            } else {
+                System.out.println("Nilai " + key + "tidak ditemukan dalam data.");
                 break;
             }
         }
-        if (!ditemukan) {
-            System.out.print("Nilai " + key + "tidak ditemukan dalam data.");
-        }
+
     }
 }
